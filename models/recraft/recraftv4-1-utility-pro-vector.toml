@@ -1,0 +1,25 @@
+# Released 2026-05-14 with the V4.1 family (V4.1, Pro, Vector, Utility tiers): https://www.recraft.ai/docs/recraft-models/recraft-v4-1
+# Formats: raster results are WebP by default or PNG (image_format), vector models return SVG: https://www.recraft.ai/docs/api-reference/endpoints
+# Input: a text prompt (the generation endpoint).
+schema = 2
+v2_only = true
+type = "image"
+name = "Recraft V4.1 Utility Pro Vector"
+description = "Higher-detail Recraft V4.1 Utility tier that generates editable SVG vector graphics"
+open_weights = false
+release_date = "2026-05-14"
+
+[modalities]
+input = ["text"]
+output = ["image/svg+xml"]
+
+[capabilities]
+tools = { supported = false }
+reasoning = { supported = false }
+temperature = false
+top_p = false
+top_k = false
+
+[limit]
+context = 0
+output = 0
